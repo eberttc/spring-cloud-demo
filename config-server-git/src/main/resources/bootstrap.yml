@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    include: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/@Jearph/demos/config-server
+          searchPaths: src/main/resources/repo/{application}/${environment}
+          default-label: master
+server:
+  port: 8889
+
+logging:
+  level:
+     ROOT: INFO
+
+

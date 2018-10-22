@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:repo/{application}/${environment}
+server:
+  port: 8889
+
+logging:
+  level:
+     ROOT: INFO
+
+
