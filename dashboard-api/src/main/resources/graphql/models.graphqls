@@ -1,0 +1,26 @@
+schema {
+    query : Query
+}
+
+type Query {
+    customerInfo(id : String): CustomerInfo
+}
+
+type CustomerInfo {
+   customer: Customer
+   loans: [Loans]
+   message: String
+}
+
+type Customer{
+    id: String
+    firstName: String
+    lastName: String
+    age: Int
+
+}
+type Loans{
+   type: String
+   customerId: String
+   amount: Int
+}

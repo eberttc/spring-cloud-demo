@@ -1,0 +1,19 @@
+GRAPHQL query:
+
+query customerInfo($id: String) {
+  customerInfo(id : $id) {
+
+    customer {
+      id
+    }
+    loans {
+      type
+     amount
+    }
+    message
+  }
+}
+
+
+Variable
+{"id": 1}
