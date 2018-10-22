@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+}
+
+apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group = 'com.learning.microservices'
+version = '1.0.0'
+description = "Interfaces"
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+
+dependencies {
+    compile('org.projectlombok:lombok:1.16.8')
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': project.description,
+                'Implementation-Version': project.version
+    }
+}
+
+

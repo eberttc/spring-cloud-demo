@@ -1,0 +1,33 @@
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  mvc:
+    dispatch-options-request: true
+  application:
+    name: customer
+  h2:
+    console:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+    port: 8881
+
+eureka:
+  client:
+    eureka-connection-idle-timeout-seconds: 60
+    serviceUrl:
+      defaultZone: http://localhost:8882/eureka/
+    healthcheck:
+      enabled: true
+
+logging:
+  level:
+    ROOT: INFO
+
+

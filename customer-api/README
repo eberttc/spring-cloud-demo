@@ -1,0 +1,4 @@
+H2 Database is created automatically.
+
+url:  http://localhost:8881/h2-console
+      jdbc:h2:mem:testdb

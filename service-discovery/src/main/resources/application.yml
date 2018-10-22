@@ -1,0 +1,20 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:  # Not a client, don't register with yourself
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    enable-self-preservation: false
+
+#spring.cloud.config.discovery.enabled: true
+logging:
+  level:
+    ROOT: INFO
+
+server:
+  port: 8882
+
+endpoints:
+  info:
+    enabled: true
