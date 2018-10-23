@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: file:///C:/@Jearph/demos/config-server
-          searchPaths: src/main/resources/repo/{application}/${environment}
+          uri: https://github.com/eberttc/spring-cloud-demo
+          searchPaths: config-server-git/src/main/resources/repo/{application}/${environment}
           default-label: master
 server:
   port: 8889
